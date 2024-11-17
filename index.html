@@ -351,6 +351,11 @@
           }
 
           super(args);
+
+          if (args.rotate) {
+            const { axis = "z", angle } = args.rotate;
+            this.rotate(axis, angle, args.center);
+          }
         }
       }
 
@@ -432,6 +437,10 @@
           radius: 1,
           height: 3,
           segments: 16,
+          rotate: {
+            axis: "x",
+            angle: 90,
+          },
         }),
         propeller,
       ];
