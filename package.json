@@ -1,0 +1,12 @@
+{
+  "name": "setup",
+  "module": "index.ts",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "live-server": "^1.2.2"
+  },
+  "scripts": {
+    "start": "live-server ./index.html"
+  },
+  "type": "module"
+}
